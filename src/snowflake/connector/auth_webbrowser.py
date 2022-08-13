@@ -116,7 +116,7 @@ class AuthByWebBrowser(AuthByPlugin):
             socket_connection.listen(0)  # no backlog
             callback_port = socket_connection.getsockname()[1]
 
-            print(
+            logger.info(
                 "Initiating login request with your identity provider. A "
                 "browser window should have opened for you to complete the "
                 "login. If you can't see it, check existing browser windows, "
